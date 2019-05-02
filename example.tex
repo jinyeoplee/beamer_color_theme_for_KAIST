@@ -1,0 +1,87 @@
+\documentclass[english]{beamer} %,handout
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+
+\makeatletter
+
+\usepackage{listings}
+\usetheme{madrid}
+
+\setbeamercovered{transparent}
+
+\usecolortheme{kaist}
+
+\usepackage{babel}
+
+\begin{document}
+
+\title[Beamer Color Theme for KAIST]{Beamer Color Theme for \\Korea Advanced Institute of Science and Technology}
+
+\author{Jinyeop Lee}
+\institute[KAIST]
+{
+  Department of Mathematical Sciences\\
+  KAIST
+}
+\date{May, 2019}
+
+\begin{frame}
+  \titlepage
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{KAIST_logo}
+  \end{center}
+\end{frame}
+
+\newcommand{\Gaussian}{\rput(0,-0.35){\psset{yunit=0.8cm,xunit=0.3}
+     \psGauss[linecolor=red, linewidth=0.8pt, sigma=0.5]{-1.5}{1.5}}}
+\def\dedge{\ncline[linestyle=dashed]}
+\def\omitnode{\Tr*[edge=\dedge]{}}
+
+\begin{frame}{Itemize}
+You can use alert text via \alert{ALERT}.\\
+Itemize will be shown as
+\begin{itemize}[<+->]
+\item Developed by Markov in 1906
+\item Markov was a disciple of Chebyshev  along with Lyapunov
+\item Introduced for no practical reason, except maybe to spite Nekrasov\\
+due to the dispute over the Weak Law of Large Numbers
+\item Within 1 year it was being used to clear up issues in thermodynamics
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Theorem and Example}
+Theorem and example block will be shown as:
+\begin{theorem}[Sample Theorem]
+	Contents of theorem will be written here.
+\end{theorem}
+
+\begin{example}[Sample Example]
+	You can put examples here including itemize.
+	\begin{itemize}
+		\item item
+		\item item
+	\end{itemize}
+\end{example}
+\end{frame}
+
+\begin{frame}{Plain Block and Alert Block}
+
+\begin{block}{Plain Block}
+	Contents of this block.
+	\begin{itemize}
+		\item item
+		\item item
+	\end{itemize}
+\end{block}
+
+\begin{alertblock}{Alert Block}
+	alert block text
+	\begin{itemize}
+		\item item
+		\item item
+	\end{itemize}
+\end{alertblock}
+\end{frame}
+
+\end{document}
